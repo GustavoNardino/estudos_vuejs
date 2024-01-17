@@ -9,24 +9,34 @@
 export default {
     name: 'Card',
     props: {
-        image: String
+        id: String,
+        name: String,
+        image: String,
     },
-    // data(){
-
-    // }
 }
 </script>
 
 <style scoped>
 div {
     transition: 0.2s;
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    height: 350px;
     display: flex;
-    margin: 1rem;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
-div:hover{
+
+img {
+    width: 240px;
+    height: 320px;
+    transition: 0.2s;
+}
+
+img:hover {
+
     opacity: 90%;
+    width: 270px;
+    height: 350px;
 }
 </style>

@@ -21,7 +21,7 @@ store.increment(2);
     <button @click="handleReq($event)">GENERATE</button>
     <div class="grid">
       <ul v-for="l in listPacks">
-        <img :src="l.set_image"></img>
+        <img :src="l.set_image" />
       </ul>
     </div>
   </div>
